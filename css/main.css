@@ -1,0 +1,320 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.planbox {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(#DFECF5, #7ECADA, #F5E6A3);
+}
+
+.planbox p {
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+}
+
+.select {
+    width: 160px;
+    height: 60px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: red;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #333;
+}
+
+.select:hover {
+    padding: 1px;
+    color: white;
+    background: #F46344;
+}
+
+.select:first-of-type {
+    margin-top: 60px;
+}
+
+.enemy.big {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    width: 60px;
+    height: 80px;
+
+}
+
+.enemy.big .bloodwrap {
+    box-sizing: border-box;
+    height: 10px;
+    width: 60px;
+    margin-bottom: 10px;
+    border: 1px red solid;
+}
+
+.enemy.big .blood {
+    width: 60px;
+    background: green;
+    height: 8px;
+}
+
+.enemy.big img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.enemy.small {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.enemy.small .bloodwrap {
+    box-sizing: border-box;
+    height: 7px;
+    width: 50px;
+    margin-bottom: 7px;
+    border: 1px red solid;
+}
+
+.enemy.small .blood {
+    width: 48px;
+    background: green;
+    height: 5px;
+}
+
+.enemy.small img {
+    width: 50px;
+    height: 35px;
+}
+
+.myplan {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.7);
+    cursor: pointer;
+    cursor: pointer;
+
+}
+
+.myplan .small {
+    width: 30px;
+    height: 30px;
+}
+
+.myplan .big {
+    width: 60px;
+    height: 60px;
+    animation: boom 1s;
+}
+
+.fire {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 46px;
+    height: 46px;
+}
+
+.fire.strong {
+    width: 26px;
+    height: 26px;
+}
+
+.score {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    color: rgb(184, 247, 10);
+}
+
+.endscore {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -125px;
+    width: 250px;
+    height: 200px;
+    /* color: rgb(255, 0, 200); */
+    border-radius: 20px;
+    /* border: #131f35 1px solid; */
+    /* background: rgb(13, 184, 211); */
+}
+
+.endscore h6 {
+    margin-left: 85px;
+    height: 30px;
+    color: #F46344;
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+.endscore h1 {
+    height: 168px;
+    text-align: center;
+    font-size: 30px;
+    color: #F46344;
+    line-height: 70px;
+}
+
+.endscore h4,h5{
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.replay {
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 60px;
+    background: #F46344;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #333;
+}
+
+.replay:hover {
+    padding: 1px;
+    color: red;
+    background: white;
+}
+
+.prize {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background: rgb(240, 48, 5);
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    box-shadow: 0px 0px 18px rgb(240, 48, 5);
+
+}
+
+.boom {
+    position: absolute;
+    animation: boom 1s;
+}
+
+.enefire {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(212, 192, 8);
+}
+
+.mybloodwrap {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0px;
+    top: 5px;
+}
+
+.mybloodwrap div {
+    float: left;
+    width: 8px;
+    height: 15px;
+    margin:5px 10px 0 10px;
+
+}
+
+.mybloodwrap div:last-of-type {
+    margin:5px 10px 0 10px;
+}
+
+.mybloodwrap div:before,
+.mybloodwrap div:after {
+    content: "";
+    width: 8px;
+    height: 15px;
+    border-radius: 10px 10px 0 0;
+    background: red;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.mybloodwrap div:after {
+    transform: translate(5.3px) rotate(45deg);
+
+}
+
+@keyframes boom {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes boom {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}  
